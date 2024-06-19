@@ -7,10 +7,13 @@ const MainLayout = ({title, content, children}) => {
         <>
             <Head>
                 <title>{title}</title>
-                <meta name="description" content={content}/>
+                <meta name="description" content={content}
+                />
             </Head>
             <Header />
+            <main className="flex-grow min-h-screen pt-4 pb-4">
                 {children}
+            </main>
             <Footer />
         </>
         

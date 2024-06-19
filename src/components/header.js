@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 grid-rows-2 grid">
+    <nav class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 grid-rows-2 grid">
         <div class="flex flex-wrap justify-between p-4">
             <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://cdn.pixabay.com/photo/2021/02/18/11/01/icon-6026833_1280.png" class="h-8" alt="SpyInv Logo" />
