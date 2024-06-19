@@ -40,7 +40,10 @@ export default function Home() {
       <p>asdasdasdasasd</p>
       <p>asdasdasdasasd</p>
       <p>asdasdasdasasd</p>
-
+      <p>asdasdasdasasd</p>
+      <p>asdasdasdasasd</p>
+      <p>asdasdasdasasd</p>
+      <p>asdasdasdasasd</p>
     </MainLayout>
   );
 }
