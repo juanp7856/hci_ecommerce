@@ -1,6 +1,5 @@
 const Producto = (props) => {
     let prod = props.producto
-    console.log(prod.imagen1)
 
     return (
         <div className="flex-col text-center mb-10">

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import MainLayout from "../components/main_layout"
 import { Inter } from "next/font/google";
 import BreadCrumb from "@/components/breadcrumb";
@@ -9,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <MainLayout title='HCI' content='Main'>
+    <MainLayout title='SpyInv | Inicio' content='Pantalla principal de productos y noticias'>
       <BreadCrumb categorias={[]} />
       <div className="grid grid-cols-4 gap-3">
         <section className="col-span-3">
