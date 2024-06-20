@@ -10,10 +10,13 @@ const MainLayout = ({title, content, children}) => {
                 <meta name="description" content={content}
                 />
             </Head>
+
             <Header />
+
             <main className="flex-grow min-h-screen pt-4 pb-4">
                 {children}
             </main>
+
             <Footer />
         </>
         
@@ -21,4 +24,4 @@ const MainLayout = ({title, content, children}) => {
     )
 }
 
-export default MainLayout
+export default MainLayout;
