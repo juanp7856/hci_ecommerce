@@ -19,7 +19,7 @@ export default function Home() {
               {
                 productos.map((producto, i) => {
                   return <div key={i}> 
-                    <Producto producto={producto} id={i}/>
+                    <Producto producto={producto}/>
                   </div>
                 })
               }
