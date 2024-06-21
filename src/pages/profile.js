@@ -4,7 +4,7 @@ import MainLayout from "@/components/main_layout";
 const Profile = () => {
     
     return (
-        <MainLayout title="SpyInv | Recuperar contraseña" content="Página para poder enviar un correo y recuperar la contraseña">
+        <MainLayout title="SpyInv | Perfil" content="Página para visualizar tu perfil">
             <BreadCrumb categorias={['profile']}/>
             <div className="grid grid-cols-3 gap-8">
                 <section className="col-span-2">

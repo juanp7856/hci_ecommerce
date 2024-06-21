@@ -20,8 +20,8 @@ export default function Busqueda() {
                 <h1 className="text-3xl my-4 font-bold">Resultados para “{busqueda}”</h1>
                 <div className="grid grid-cols-6 gap-4">
                 {
-                    prodsFiltrados.map((producto) => {
-                        return <ProductoSearch producto={producto}/>
+                    prodsFiltrados.map((producto, index) => {
+                        return <ProductoSearch producto={producto} key={index}/>
                     })
                 }
                 </div>

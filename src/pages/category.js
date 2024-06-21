@@ -32,7 +32,7 @@ export default function Category() {
             <div className="grid grid-cols-4 gap-3">
                 {
                     nuevos_prods.map((prod) => {
-                        return  <ProductoSearch producto={prod}/>
+                        return  <ProductoSearch producto={prod} key={prod.id}/>
                         
                     })
                 }

@@ -17,8 +17,8 @@ export default function Home() {
             <h1 className="text-center text-3xl my-4 font-bold">Productos</h1>
             <div className="grid grid-cols-3 gap-4">
               {
-                productos.map((producto) => {
-                  return <Producto producto={producto}/>
+                productos.map((producto, index) => {
+                  return <Producto producto={producto} key={index}/>
                 })
               }
             </div>
@@ -27,8 +27,8 @@ export default function Home() {
             <h1 className="text-center text-3xl my-4 font-bold">Noticias</h1>
             <div className="grid grid-cols-3 gap-4">
               {
-                noticias.map((noticia) => {
-                  return <Noticia noticia={noticia}/>
+                noticias.map((noticia, index) => {
+                  return <Noticia noticia={noticia} key={index}/>
                 })
               }
             </div>
