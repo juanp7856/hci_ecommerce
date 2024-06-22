@@ -25,7 +25,7 @@ const Policies = () => {
                             </li>
                         </ol>
                     </li>
-                    <li className="font-bold text-4xl my-2">
+                    <li className="font-bold text-4xl mb-2 mt-10">
                         Política de uso
                         <ol className="list-decimal list-inside ml-6">
                             <li className="font-semibold text-2xl my-2">
