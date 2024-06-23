@@ -37,14 +37,14 @@ export default function Login() {
                         </div>
                         <div className="flex justify-center">
                             <p className='mx-1'>¿No tienes una cuenta?</p>
-                            <Link href="/rec-pass" className="justify-end text-white font-bold">Crea una</Link>
+                            <Link href="/register" className="justify-end text-white font-bold">Crea una</Link>
                         </div>
                     </form>
                 </div>
                 <div className="content-center">
                     <h1 className="font-bold text-6xl">¡Bienvenido!</h1>
                     <h1 className="text-2xl mt-5 text-center">Encantados de tenerte de vuelta.</h1>
-                    <img className='mx-auto my-8' alt="" src="favicon.ico"/>
+                    <img className='mx-auto my-8' alt="Logo de SpyInv" src="favicon.ico"/>
                 </div>
             </div>
         </>
