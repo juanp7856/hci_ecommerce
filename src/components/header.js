@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { Inter } from 'next/font/google'
+import useSpeechRecognition from "@/hooks/useSpeechRecognition";
 const inter = Inter({ subsets: ["latin"] });
 
 const Header = (props) => {
@@ -13,20 +14,10 @@ const Header = (props) => {
             router.push(`/search?qry=${text}`)
     }
 
-    const useSpeechRecognition = () => {
-        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        const recognition = new SpeechRecognition();
-
-        if (!recognition) return;
-
-        recognition.onresult = async (event) => { 
-            const transcript = event.results[0][0].transcript;
-            setText(transcript)
-            setTimeout(()=>router.push(`/search?qry=${transcript}`), 1000)
-        }
-
-        recognition.start();
-    }
+    const { startRecognition } = useSpeechRecognition((transcript) => {
+        setText(transcript);
+        setTimeout(() => router.push(`/search?qry=${transcript}`), 1000);
+      });
 
     return (
     <nav className={`bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 grid-rows-2 grid ${inter.className}`}>
@@ -64,7 +55,7 @@ const Header = (props) => {
                 <label htmlFor="voice-search" className="sr-only">Buscar por voz</label>
                 <div className="relative w-full">
                     <input type="text" size="64" id="search" value={text} onChange={(e) => setText(e.target.value)} className="px-80 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Buscar por producto"/>
-                    <button id="voice-search" type="button" className="absolute inset-y-0 right-0 flex items-center pe-3" onClick={()=>useSpeechRecognition()}>
+                    <button id="voice-search" type="button" className="absolute inset-y-0 right-0 flex items-center pe-3" onClick={startRecognition}>
                         <svg className="w-4 h-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 7v3a5.006 5.006 0 0 1-5 5H6a5.006 5.006 0 0 1-5-5V7m7 9v3m-3 0h6M7 1h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z"/>
                         </svg>
