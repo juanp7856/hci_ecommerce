@@ -47,6 +47,7 @@ const Register = () => {
                 <div className="content-center">
                     <h1 className="font-bold text-6xl">¡Bienvenido!</h1>
                     <h1 className="text-2xl mt-5 text-center">Nos encantaría que te unas.</h1>
+                    <img className='mx-auto my-8' alt="" src="favicon.ico"/>
                 </div>
             </div>
         </>
