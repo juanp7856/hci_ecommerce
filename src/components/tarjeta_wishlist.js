@@ -1,7 +1,7 @@
 const TarjetaWishlit = (props) => {
     const prod = props.producto
 
-    return <tr key={props.id}>
+    return <tr>
         <td className="p-4"><img className="w-20 h-20" src={prod.imagen1}/></td>
         <td className="py-4 px-8">{prod.nombre}</td>
         <td className="p-4 text-center">${prod.precio}</td>

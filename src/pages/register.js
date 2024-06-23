@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Register = () => {
+    const router = useRouter();
     return (
         <>
             <div className='relative w-full h-full flex'>
@@ -36,7 +38,7 @@ const Register = () => {
                             <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Acepto las <Link href="/policies" className="justify-end text-white">Políticas</Link></label>
                         </div>
                         <div className="flex justify-center">
-                            <button type="submit" class="my-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CREAR NUEVA CUENTA</button>
+                            <button onClick={()=>router.push('/login')} type="submit" class="my-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CREAR NUEVA CUENTA</button>
                         </div>
                         <div className="flex justify-center">
                             <p className='mx-1'>¿Tienes una cuenta?</p>

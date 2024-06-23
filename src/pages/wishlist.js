@@ -24,7 +24,7 @@ const WishList = () => {
         <tbody>
             {
                 productos.map((producto, i) => {
-                    return <TarjetaWishlit producto={producto} id={i}/>
+                    return <TarjetaWishlit producto={producto} key={i}/>
                 })
             }
         </tbody>

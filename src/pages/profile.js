@@ -1,8 +1,9 @@
 import BreadCrumb from "@/components/breadcrumb";
 import MainLayout from "@/components/main_layout";
+import { useRouter } from "next/router";
 
 const Profile = () => {
-    
+    const router = useRouter();
     return (
         <MainLayout title="SpyInv | Perfil" content="Página para visualizar tu perfil">
             <BreadCrumb categorias={['profile']}/>
@@ -24,7 +25,7 @@ const Profile = () => {
                             <p>944001922</p>
                         </div>
                         <div className="content-end text-end">
-                            <button type="button" class="mt-40 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">EDITAR CUENTA</button>
+                            <button type="button" onClick={()=>router.push('/edit-profile')} class="mt-40 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">EDITAR CUENTA</button>
                         </div>
                     </div>
                 </section>
@@ -42,7 +43,7 @@ const Profile = () => {
                         <p className="text-xl">Pedido #1234 - Fecha: 10/01/1001 - 3000$</p>
                         <p className="text-xl">Estado: [Enviado]</p>
                     </div>
-                    <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Ver historial</button>
+                    <button type="button" onClick={()=>router.push('/history')} class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Ver historial</button>
                 </aside>
             </div>
         </MainLayout>

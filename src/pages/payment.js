@@ -82,7 +82,7 @@ const Payment = () => {
                                 <label for="default-radio-2" class="ms-2 font-medium text-gray-900 dark:text-gray-300">Yape / Plin</label>
                             </div>
                             <div className="flex justify-end">
-                                <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-4 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">EMITIR PAGO</button>
+                                <button type="button" onClick={()=>router.push('/success')} className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-4 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">EMITIR PAGO</button>
                             </div>
                         </div>
                     </div>
@@ -113,10 +113,12 @@ const Payment = () => {
                                 <td className="p-4">10</td>
                                 <td className="py-4 px-8">$420</td>
                             </tr>
-                            <tr className="border text-start">
-                                <td className="ps-2 pt-2">Subtotal: $X.XX</td>
-                                <td className="ps-2">Envío: $X.XX</td>
-                                <td className="ps-2 pb-2">Impuestos: $X.XX</td>
+                            <tr className="border text-start flex-col">
+                                <td className="ps-2 py-2">
+                                    <p>Subtotal: $X.XX</p>
+                                    <p>Envío: $X.XX</p>
+                                    <p>Impuestos: $X.XX</p>
+                                </td>
                             </tr>
                             <tr className="border text-start">
                                 <td className="ps-2 py-2">TOTAL: $X.XX</td>
