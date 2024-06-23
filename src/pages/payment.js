@@ -114,12 +114,12 @@ const Payment = () => {
                                 <td className="py-4 px-8">$420</td>
                             </tr>
                             <tr className="border text-start">
-                                <p className="ps-2 pt-2">Subtotal: $X.XX</p>
-                                <p className="ps-2">Envío: $X.XX</p>
-                                <p className="ps-2 pb-2">Impuestos: $X.XX</p>
+                                <td className="ps-2 pt-2">Subtotal: $X.XX</td>
+                                <td className="ps-2">Envío: $X.XX</td>
+                                <td className="ps-2 pb-2">Impuestos: $X.XX</td>
                             </tr>
                             <tr className="border text-start">
-                                <p className="ps-2 py-2">TOTAL: $X.XX</p>
+                                <td className="ps-2 py-2">TOTAL: $X.XX</td>
                             </tr>
                         </tbody>
                     </table>
