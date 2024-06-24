@@ -29,6 +29,7 @@ Y proceda a acceder a [http://localhost:3000](http://localhost:3000)
 [De click aquí para ir a la página en producción](https://hci-ecommerce.vercel.app "Da click aquí para ir a la página en producción").
 
 **Curso**: Interacción Humano Computadora
+
 **Sección**: 520
 
 **Integrantes**:
