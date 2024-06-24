@@ -30,6 +30,7 @@ Y proceda a acceder a [http://localhost:3000](http://localhost:3000)
 
 **Curso**: Interacción Humano Computadora
 **Sección**: 520
+
 **Integrantes**:
 - Juan Pablo Duarte
 - Esteban Terrones
