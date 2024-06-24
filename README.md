@@ -8,7 +8,7 @@ En este proyecto, se ha realizado una aplicación web, desde el diseño de los r
 
 El principal objetivo fue implementar una página para vender productos ficticios con requerimientos que soliciten funciones de Accesibilidad. En este caso fueron los siguientes:
 
-###Requerimientos de accesibilidad
+### Requerimientos de accesibilidad
 1. Elementos multimedia con etiquetas descriptivas.
 2. Compatibilidad con lectores de pantalla.
 3. Contraste para textos.
