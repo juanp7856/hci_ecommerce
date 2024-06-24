@@ -57,9 +57,11 @@ const Footer = (props) => {
                         <div className="grid grid-cols-2">
                             <p className="font-semibold text-white">Configurar idioma</p>
                             <div className="justify-end flex mr-3">
-                                <p className="text-white">EN</p>
+                                <label htmlFor='english' className='sr-only'>Cambiar a inglés</label>
+                                <Link id="english" href="#" className="text-white">EN</Link>
                                 <p className="text-white">/</p>
-                                <p className="text-white">ES</p>
+                                <label htmlFor='spanish' className='sr-only'>Cambiar a español</label>
+                                <Link id="spanish" href="#" className="text-white">ES</Link>
                             </div>
                         </div>
                     </div>

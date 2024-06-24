@@ -13,18 +13,18 @@ const Cart = () => {
             <BreadCrumb categorias={['cart']}/>
             <section className="w-full">
                 <Barra prog={router.pathname}/>
-                <table className="auto mx-auto border-spacing-2 mt-8">
-                    <thead>
-                        <tr className="border">
-                            <th className="p-4">Quitar</th>
-                            <th className="p-4">Imagen</th>
-                            <th className="py-4 px-8">Nombre de producto</th>
-                            <th className="p-4">Precio por unidad</th>
-                            <th className="p-4">Cantidad</th>
-                            <th className="p-4">Precio total</th>
+                <table role="table" className="auto mx-auto border-spacing-2 mt-8">
+                    <thead role="rowgroup">
+                        <tr role="row" className="border">
+                            <th role="columnheader" className="p-4">Quitar</th>
+                            <th role="columnheader" className="p-4">Imagen</th>
+                            <th role="columnheader" className="py-4 px-8">Nombre de producto</th>
+                            <th role="columnheader" className="p-4">Precio por unidad</th>
+                            <th role="columnheader" className="p-4">Cantidad</th>
+                            <th role="columnheader" className="p-4">Precio total</th>
                         </tr>
                     </thead>
-                    <tbody className="border">
+                    <tbody role="rowgroup" className="border">
                         {
                             productos.map((producto, i) => {
                                 return <TarjetaCarrito producto={producto} key={i}/>

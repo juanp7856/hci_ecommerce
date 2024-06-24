@@ -11,7 +11,7 @@ const Profile = () => {
                 <section className="col-span-2">
                     <h1 className="font-bold text-4xl my-6 text-center">Mi perfil</h1>
                     <div className="grid grid-cols-3 gap-8">
-                        <img className="px-6 w-full rounded-lg" src="https://i1.wp.com/images.binaryfortress.com/General/UnknownUser1024.png?ssl=1" alt=""/>
+                        <img className="px-6 w-full rounded-lg" src="https://i1.wp.com/images.binaryfortress.com/General/UnknownUser1024.png?ssl=1" alt="Imagen de perfil"/>
                         <div className="flex-col">
                             <h3 className="font-bold">Nombre de usuario</h3>
                             <p>pepe.grillo42</p>

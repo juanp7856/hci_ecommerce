@@ -17,11 +17,11 @@ const DetalleProducto = () => {
             <div className="grid grid-cols-2">
                 <section className="text-center content-center">
                     <h1 className="font-bold text-4xl my-6">{producto.nombre} ({producto.stock})</h1>
-                    <img className="w-1/2 mb-4 mx-auto" src={producto.imagen1}/>
+                    <img className="w-1/2 mb-4 mx-auto" alt={`Primera imagen de ${producto.nombre}`} src={producto.imagen1}/>
                     <div className="grid grid-cols-3 gap-3 w-1/2 mx-auto">
-                        <img alt="" src={producto.imagen1}/>
-                        <img alt="" src={producto.imagen2}/>
-                        <img alt="" src={producto.imagen3}/>
+                        <img alt={`Segunda imagen de ${producto.nombre}`} src={producto.imagen1}/>
+                        <img alt={`Tercera imagen de ${producto.nombre}`} src={producto.imagen2}/>
+                        <img alt={`Cuarta imagen de ${producto.nombre}`} src={producto.imagen3}/>
                     </div>
                 </section>
                 <section>

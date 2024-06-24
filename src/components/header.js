@@ -8,7 +8,15 @@ const inter = Inter({ subsets: ["latin"] });
 const Header = (props) => {
     const router = useRouter();
     const [text, setText] = useState("");
-    const isLogged = localStorage.getItem("logged") || "0";
+
+    let isLogged = "0"
+
+    if (typeof window == 'undefined') {
+        console.log('No hay localStorage')
+    } else {
+        isLogged = localStorage.getItem("logged");
+    }
+
 
     const linkClasses = isLogged=='1' 
         ? 'block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0' 
@@ -34,7 +42,7 @@ const Header = (props) => {
     <nav className={`bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 grid-rows-2 grid ${inter.className}`}>
         <div className="flex flex-wrap justify-between p-4">
             <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="/favicon.ico" className="h-8" alt="SpyInv Logo" />
+                <img src="/favicon.ico" className="h-8" alt="Logo de SpyInv" />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SpyInv</span>
             </Link>
             <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">

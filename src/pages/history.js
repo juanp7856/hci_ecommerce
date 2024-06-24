@@ -14,71 +14,71 @@ const History = () => {
             <BreadCrumb categorias={['history']}/>
             <div className="grid grid-cols-3 gap-8">
                 <section className={`text-center w-full ${isOpen ? 'col-span-2' : 'col-span-3'}`}>
-                    <table className="mx-auto border-spacing-8 mt-8">
-                        <thead>
-                            <tr className="border">
-                                <th className="px-20">N° Recibo</th>
-                                <th className="py-8 px-16">Fecha</th>
-                                <th className="px-20">Monto</th>
-                                <th className="px-20">Descripción</th>
+                    <table role="table" className="mx-auto border-spacing-8 mt-8">
+                        <thead role="rowgroup">
+                            <tr role="row" className="border">
+                                <th role="columnheader" className="px-20">N° Recibo</th>
+                                <th role="columnheader" className="py-8 px-16">Fecha</th>
+                                <th role="columnheader" className="px-20">Monto</th>
+                                <th role="columnheader" className="px-20">Descripción</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td className="p-8">#0006</td>
-                                <td>04 jun. 2024 13:33</td>
-                                <td>$125.50</td>
-                                <td>
+                        <tbody role="rowgroup">
+                            <tr role="row">
+                                <td role="cell" className="p-8">#0006</td>
+                                <td role="cell">04 jun. 2024 13:33</td>
+                                <td role="cell">$125.50</td>
+                                <td role="cell">
                                     <button onClick={() => toggleSidebar()}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 mx-auto" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></path></svg>
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td className="p-8">#0006</td>
-                                <td>04 jun. 2024 13:33</td>
-                                <td>$125.50</td>
-                                <td>
+                            <tr role="row">
+                                <td role="cell" className="p-8">#0006</td>
+                                <td role="cell">04 jun. 2024 13:33</td>
+                                <td role="cell">$125.50</td>
+                                <td role="cell">
                                     <button onClick={() => toggleSidebar()}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 mx-auto" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></path></svg>
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td className="p-8">#0006</td>
-                                <td>04 jun. 2024 13:33</td>
-                                <td>$125.50</td>
-                                <td>
+                            <tr role="row">
+                                <td role="cell" className="p-8">#0006</td>
+                                <td role="cell">04 jun. 2024 13:33</td>
+                                <td role="cell">$125.50</td>
+                                <td role="cell">
                                     <button onClick={() => toggleSidebar()}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 mx-auto" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></path></svg>
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td className="p-8">#0006</td>
-                                <td>04 jun. 2024 13:33</td>
-                                <td>$125.50</td>
-                                <td>
+                            <tr role="row">
+                                <td role="cell" className="p-8">#0006</td>
+                                <td role="cell">04 jun. 2024 13:33</td>
+                                <td role="cell">$125.50</td>
+                                <td role="cell">
                                     <button onClick={() => toggleSidebar()}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 mx-auto" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></path></svg>
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td className="p-8">#0006</td>
-                                <td>04 jun. 2024 13:33</td>
-                                <td>$125.50</td>
-                                <td>
+                            <tr role="row">
+                                <td role="cell" className="p-8">#0006</td>
+                                <td role="cell">04 jun. 2024 13:33</td>
+                                <td role="cell">$125.50</td>
+                                <td role="cell">
                                     <button onClick={() => toggleSidebar()}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 mx-auto" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></path></svg>
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td className="p-8">#0006</td>
-                                <td>04 jun. 2024 13:33</td>
-                                <td>$125.50</td>
-                                <td>
+                            <tr role="row">
+                                <td role="cell" className="p-8">#0006</td>
+                                <td role="cell">04 jun. 2024 13:33</td>
+                                <td role="cell">$125.50</td>
+                                <td role="cell">
                                     <button onClick={() => toggleSidebar()}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 mx-auto" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></path></svg>
                                     </button>
@@ -104,7 +104,7 @@ const History = () => {
                                 <div className="p-10">
                                     <p className="font-semibold">Capa de Invisibilidad Azul</p>
                                     <div className="grid grid-cols-2 gap-4">
-                                        <img className="my-2 rounded-lg w-5/6" src="/imagenes/cloak1.jpeg" alt=""/>
+                                        <img className="my-2 rounded-lg w-5/6" src="/imagenes/cloak1.jpeg" alt="Imagen de capa de invisibilidad azul"/>
                                         <div className="flex-col mt-2">
                                             <div className="grid grid-cols-2">
                                                 <div>
@@ -134,7 +134,7 @@ const History = () => {
                                     </div>
                                     <p className="font-semibold mt-4">Traje clásico de espía negro</p>
                                     <div className="grid grid-cols-2 gap-4">
-                                        <img className="my-2 rounded-lg w-5/6" src="/imagenes/cloak1.jpeg" alt=""/>
+                                        <img className="my-2 rounded-lg w-5/6" src="/imagenes/cloak1.jpeg" alt="Imagen de traje clásico de espía negro"/>
                                         <div className="flex-col mt-2">
                                             <div className="grid grid-cols-2">
                                                 <div>

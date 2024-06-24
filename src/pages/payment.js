@@ -89,39 +89,39 @@ const Payment = () => {
                 </section>
                 <aside className="border-l-4 border-gray-800">
                     <h2 className="text-2xl font-semibold text-center">Resumen</h2>
-                    <table className="auto mx-auto border border-white border-spacing-2 mt-8">
-                        <thead>
-                            <tr>
-                                <th className="p-8">Productos</th>
-                                <th className="p-8">Cantidad</th>
-                                <th className="p-8">Precio</th>
+                    <table className="auto mx-auto border border-white border-spacing-2 mt-8" role="table">
+                        <thead role="rowgroup">
+                            <tr role="row">
+                                <th role="columnheader" className="p-8">Productos</th>
+                                <th role="columnheader" className="p-8">Cantidad</th>
+                                <th role="columnheader" className="p-8">Precio</th>
                             </tr>
                         </thead>
-                        <tbody className="p-8 text-center">
-                            <tr>
-                                <td className="p-4">Producto</td>
-                                <td className="p-4">10</td>
-                                <td className="py-4 px-8">$420</td>
+                        <tbody className="p-8 text-center" role="rowgroup">
+                            <tr role="row">
+                                <td role="cell" className="p-4">Producto</td>
+                                <td role="cell" className="p-4">10</td>
+                                <td role="cell" className="py-4 px-8">$420</td>
                             </tr>
-                            <tr>
-                                <td className="p-4">Producto</td>
-                                <td className="p-4">10</td>
-                                <td className="py-4 px-8">$420</td>
+                            <tr role="row">
+                                <td role="cell" className="p-4">Producto</td>
+                                <td role="cell" className="p-4">10</td>
+                                <td role="cell" className="py-4 px-8">$420</td>
                             </tr>
-                            <tr>
-                                <td className="p-4">Producto</td>
-                                <td className="p-4">10</td>
-                                <td className="py-4 px-8">$420</td>
+                            <tr role="row">
+                                <td role="cell" className="p-4">Producto</td>
+                                <td role="cell" className="p-4">10</td>
+                                <td role="cell" className="py-4 px-8">$420</td>
                             </tr>
-                            <tr className="border text-start flex-col">
-                                <td className="ps-2 py-2">
+                            <tr role="row" className="border text-start flex-col">
+                                <td role="cell" className="ps-2 py-2">
                                     <p>Subtotal: $X.XX</p>
                                     <p>Envío: $X.XX</p>
                                     <p>Impuestos: $X.XX</p>
                                 </td>
                             </tr>
-                            <tr className="border text-start">
-                                <td className="ps-2 py-2">TOTAL: $X.XX</td>
+                            <tr role="row" className="border text-start">
+                                <td role="cell" className="ps-2 py-2">TOTAL: $X.XX</td>
                             </tr>
                         </tbody>
                     </table>

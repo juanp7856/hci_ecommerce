@@ -3,7 +3,7 @@ const ProductoSearch = (props) => {
 
     return (
         <div className="flex-col mb-10">
-            <img className="w-full h-96 object-cover p-6" alt={prod.descripcion} src={prod.imagen1}/>
+            <img className="w-full h-96 object-cover p-6" alt={`Imagen de ${prod.nombre}`} src={prod.imagen1}/>
             <p className="my-2 pl-6">{prod.nombre}</p>
             <div className="flex-box mb-2 pl-6">
                 {
