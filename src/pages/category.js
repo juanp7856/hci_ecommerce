@@ -29,7 +29,9 @@ export default function Category() {
         <MainLayout title='SpyInv | Búsqueda' content='Pantalla de búsqueda de productos por texto.'>
             <BreadCrumb categorias={[]} />
             <Sidebar />
+            <h1 className="m-4 font-bold text-4xl">Categoría: {categoria}</h1>
             <div className="grid grid-cols-4 gap-3">
+                
                 {
                     nuevos_prods.map((prod) => {
                         return <ProductoSearch producto={prod} key={prod.id}/>

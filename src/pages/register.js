@@ -1,13 +1,27 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Register = () => {
     const router = useRouter();
+
+    const handleRegister = () => {
+        localStorage.setItem("logged", "1");
+        router.push('/')
+    }
+
     return (
         <>
+            <Head>
+                <title>SpyInv | Registro</title>
+                <meta name="description" content="Página para poder registrar tu cuenta."
+                />
+            </Head>
             <div className='relative w-full h-full flex'>
-                <svg className='w-10 h-10 absolute m-4 top-0 left-0' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M249.38 336L170 256l79.38-80m-68.35 80H342"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"/></svg>
-                <svg className='w-10 h-10 absolute m-4 top-0 left-12' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M80 212v236a16 16 0 0 0 16 16h96V328a24 24 0 0 1 24-24h80a24 24 0 0 1 24 24v136h96a16 16 0 0 0 16-16V212"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256m368-77V64h-48v69"/></svg>
+                <label htmlFor='back' className="sr-only">Botón para regresar</label>
+                <button id="back" onClick={()=>router.back()}><svg className='w-10 h-10 absolute m-4 top-0 left-0' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M249.38 336L170 256l79.38-80m-68.35 80H342"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"/></svg></button>
+                <label htmlFor='home' className="sr-only">Botón para ir al inicio</label>
+                <button id="home" onClick={()=>router.push('/')}><svg className='w-10 h-10 absolute m-4 top-0 left-12' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M80 212v236a16 16 0 0 0 16 16h96V328a24 24 0 0 1 24-24h80a24 24 0 0 1 24 24v136h96a16 16 0 0 0 16-16V212"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256m368-77V64h-48v69"/></svg></button>
             </div>
             <div className="grid grid-cols-2 w-screen h-screen justify-items-center dark:bg-gray-900">
                 <div className="content-center">
@@ -38,7 +52,7 @@ const Register = () => {
                             <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Acepto las <Link href="/policies" className="justify-end text-white">Políticas</Link></label>
                         </div>
                         <div className="flex justify-center">
-                            <button onClick={()=>router.push('/')} type="submit" class="my-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CREAR NUEVA CUENTA</button>
+                            <button onClick={()=>handleRegister()} type="submit" class="my-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CREAR NUEVA CUENTA</button>
                         </div>
                         <div className="flex justify-center">
                             <p className='mx-1'>¿Tienes una cuenta?</p>

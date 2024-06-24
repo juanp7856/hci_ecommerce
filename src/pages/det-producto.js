@@ -16,7 +16,7 @@ const DetalleProducto = () => {
             <BreadCrumb categorias={['det-producto']}/>
             <div className="grid grid-cols-2">
                 <section className="text-center content-center">
-                    <h1 className="font-bold text-4xl my-6">{producto.nombre}</h1>
+                    <h1 className="font-bold text-4xl my-6">{producto.nombre} ({producto.stock})</h1>
                     <img className="w-1/2 mb-4 mx-auto" src={producto.imagen1}/>
                     <div className="grid grid-cols-3 gap-3 w-1/2 mx-auto">
                         <img alt="" src={producto.imagen1}/>
